@@ -123,14 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ПейоЯворовПрограма.cpp" />
+    <ClCompile Include="PeioQvorovPrograma.cpp" />
+    <ClCompile Include="QvorovMainFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
-    <ClInclude Include="ЯворовMainFrame.h" />
+    <ClInclude Include="QvorovMainFrame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
