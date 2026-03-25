@@ -1,32 +1,51 @@
-﻿#include "QvorovMainFrame.h"
+#include "QvorovMainFrame.h"
 
 QvorovMainFrame::QvorovMainFrame() :
-	biographyButton({ 50, 50, 200, 50 }, "Биография", GRAY,
-	std::string("Пейо Яворов (истинско име Пейо Тотев Крачолов) е един от най-значимите \n ") +
-	" български поети и дейци на националноосвободителното движение в Македония. \n " +
-	"Роден е на 1 януари 1878 г.в Чирпан, а умира на 29 октомври 1914 г.в София. \n" +
-	"\n" +
-	"Яворов започва творческия си път под влияние на реализма, но по-късно се \n " +
-	"утвърждава като един от водещите представители на българския символизъм. \n" +
-	"Сред най-известните му произведения са стихосбирките „Подир сенките на \n" +
-	"облаците“ и „Безсъници“, както и драмите „В полите на Витоша“ и „Когато гръм \n" +
-	"удари, как ехото заглъхва“. \n " +
-	"\n" +
-	"Освен поет, той е и активен участник в борбите за освобождение на Македония \n" +
-	"като член на Вътрешна македоно-одринска революционна организация, където \n" +
-	"работи с личности като Гоце Делчев. \n" +
-	"\n" +
-	"Личният му живот е белязан от драматични събития, включително трагичната \n" +
-	"смърт на съпругата му Лора Каравелова, което силно повлиява върху \n" +
-	"творчеството и съдбата му. Яворов остава в историята като поет на дълбоките \n" +
-	"чувства, любовта и трагизма.")
-{}
+	backgroundImage(LoadImage("resources/pics/peioKushtajpg.jpg")),
+	backgroundTexture(LoadTextureFromImage(backgroundImage)),
 
-void QvorovMainFrame::runVisuals()
+	peioImage(LoadImage("resources/pics/peioQvorov.png")),
+	peioTexture(LoadTextureFromImage(peioImage)),
+
+	start(true), startTime(0.0f), howBlack(1.0f), 
+	optionsBox({ 550, 50, 200, 50 }), 
+	peioMessageBox({ 50, 150, 400, 200 })
+
 {
-	biographyButton.draw();
+	int codepoints[512];
+	int count = 0;
+
+	for (int i = 0x0400; i <= 0x04FF; i++) {
+		codepoints[count++] = i;
+	}
+
+	this->textFont = LoadFontEx("resources/Fonts/2596-font.ttf", 32, codepoints, count);
+}
+
+void QvorovMainFrame::runVisuals(){
+	DrawTexture(backgroundTexture, 0, 0, WHITE);
+	DrawTexture(peioTexture, 0, 270, WHITE);
+
+	DrawRectangle();
+	
+	
+	if (start) {
+		DrawRectangle(0, 0, 950, 750, Fade(BLACK, howBlack));
+		DrawTextEx(textFont, "Интервю с Пейо Яворов", { 310, 300 }, 40, 5, WHITE);
+
+		startTime += GetFrameTime();
+		if (startTime >= 2.5f) {
+			howBlack -= 0.25f * GetFrameTime();
+			if (howBlack <= 0.0f) {
+				start = false;
+			}
+		}
+	}
+
+
+	
 }
 
 void QvorovMainFrame::runMath() {
-	biographyButton.run();
+
 }
