@@ -15,7 +15,7 @@ class QvorovMainFrame
 	Rectangle optionsBox;
 	Rectangle peioMessageBox;
 
-	Rectangle options[4];
+	//Rectangle options[4];
 	std::vector<Button> availableOptions;
 	int optionsIndex;
 
@@ -31,13 +31,20 @@ class QvorovMainFrame
 	bool firstOptionSelected;
 	bool secondOptionSelected;
 
+	// Defined button
+	Button emptyButtonOne;
+	Button emptyButtonTwo;
+	Button emptyButtonThree;
+	Button emptyButtonFour;
+
 	// First option buttons
 	Button helloPeioButton;
 
 	// Second option buttons
 	Button biographyButton;
-	Button howPeioFeelsButton;
-
+	Button whatIsRealLoveButton;
+	Button needsForLovePoetryButton;
+	Button whatMakesHimWriteButton;
 
 
 	public:

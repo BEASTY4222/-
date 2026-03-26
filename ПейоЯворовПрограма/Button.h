@@ -34,14 +34,14 @@ struct Button
 		this->textFont = LoadFontEx("resources/Fonts/2596-font.ttf", 32, codepoints, count);
 	}
 
-	Button()
-	{
-		this->box = { 0, 0, 0, 0 };
-		this->buttonText = "";
-		this->normalbuttonColor = { 0, 0, 0, 255 };
-		this->text = "";
+	Button() {
 		this->textFont = GetFontDefault();
-	}
+		this->buttonText = "...";
+		this->currentbuttonColor = GRAY;
+		this->normalTextColor = WHITE;
+		this->hoverTextColor = BLACK;
+	
+	};
 
 	void draw(){
 		DrawRectangleRec(box, currentbuttonColor);
@@ -68,6 +68,24 @@ struct Button
 		}
 		
 	}
+	void run(bool& peioTalking, std::string& message) {
+		if (CheckCollisionPointRec(GetMousePosition(), box)) {
+			normalTextColor = hoverTextColor;
+			currentbuttonColor = WHITE;
+
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
+				message = text;
+				peioTalking = true;
+
+				this->reset();
+			}
+		}
+		else {
+			normalTextColor = WHITE;
+			currentbuttonColor = normalbuttonColor;
+		}
+
+	}
 
 	void reset() {
 		this->box = { 0, 0, 0, 0 };
@@ -76,16 +94,11 @@ struct Button
 		this->textFont = GetFontDefault();
 	}
 
+	void changeCords(Rectangle box) {
+		this->box = box;
+	}
+
 	bool operator==(const Button& other) const {
-		return this->box.x == other.box.x &&
-			   this->box.y == other.box.y &&
-			   this->box.width == other.box.width &&
-			   this->box.height == other.box.height &&
-			   this->buttonText == other.buttonText &&
-			   this->normalbuttonColor.r == other.normalbuttonColor.r &&
-			   this->normalbuttonColor.g == other.normalbuttonColor.g &&
-			   this->normalbuttonColor.b == other.normalbuttonColor.b &&
-			   this->normalbuttonColor.a == other.normalbuttonColor.a &&
-			   this->text == other.text;
+		return this->buttonText == other.buttonText;
 	}
 };
