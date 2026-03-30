@@ -7,7 +7,7 @@ QvorovMainFrame::QvorovMainFrame() :
 	peioImage(LoadImage("resources/pics/peioQvorov.png")),
 	peioTexture(LoadTextureFromImage(peioImage)),
 
-	firstOptionSelected(false), secondOptionSelected(false), thirdOptionSelected(false), fourthOptionSelected(false),
+	firstOptionSelected(false), secondOptionSelected(false), thirdOptionSelected(false), fourthOptionSelected(false), fifthOptionSelected(false), sixthOptionSelected(false),
 
 	start(true), startTime(0.0f), howBlack(1.0f), peioTalking(false), showInterviewOptions(false), optionsIndex(0),
 	optionsBox({ 465, 500, 480, 240 }),
@@ -74,7 +74,41 @@ QvorovMainFrame::QvorovMainFrame() :
 	doesThePoetHaveToBeUnderstoodButton({ 470, 690, 470, 50 }, "Трябва ли поетът да бъде разбран?", GRAY,
 		std::string("Поетът е сам по природа.\n") +
 		"Ако някой го разбере — това е дар. \n" + 
-		"Но той пише не за разбиране, а защото не може иначе.")
+		"Но той пише не за разбиране, а защото не може иначе."),
+
+	// Fifth option buttons
+	whyChangeGanreButton({ 470, 510, 470, 50 }, "Защо си сменихте жанра след\nИлинденското възтания?", GRAY,
+		std::string("След Илинден сърцето ми не можа вече да бъде само хроника \n") +
+		"видях човешката трагедия и тя поиска стих. \n" +
+		"Жанрът се смени, защото думите търсеха не факти,\nа сълзи и мълчание, \n" +
+		"които да превърнат болката в песен. \n" + 
+		"Писах, за да изповядам съдбата на народа не като историк,\n" +
+		"а като човек, който носи раните им в гърдите си."),
+	
+	whatDoYouMissMostButton({ 470, 570, 470, 50 }, "Какво ви липсва най-много?", GRAY,
+		std::string("Липсва ми онова, което никога не можах да имам \n") +
+		"истинската любов, която изгаря и спасява.\n" +
+		"Липсва ми и свободата, която се изплъзна от ръцете ми.\n" +
+		"Но най-много ми липсва мирът в душата, който никога не намерих."),
+
+	ifYouCouldChangeSomethingButton({ 470, 630, 470, 50 }, "Ако можехте да промените нещо в живота си,\nкакво би било?", GRAY,
+		std::string("Ако можех да променя нещо, щях да изтрия онзи миг,\n") +
+		"в който не посмях да кажа всичко, което гореше в мен.\n" +
+		"Щях да дам на любовта повече смелост и на тъгата\n" +
+		"по-малко власт над дните ми.\n" + 
+		"Но може би всяка рана ме е ковала, \n" + 
+		"промяната би отнела и песента, и мълчанието ми."),
+
+	favoritePeioPoemButton({ 470, 690, 470, 50 }, "Кое вие е любимото ваше произведение?", GRAY,
+		std::string("Любимото ми произведение е „Арменци“. \n") +
+		"В него аз търсих и намерих онова, което най-силно обичам\n" +
+		"любовта, готова да се жертва и да умре.\n" +
+		"То е родено от нощта на самотата и носи в себе си плача и надеждата на един разкъсан свят.\n" +
+		"Това стихотворение ми говори като огън в мрака и ме прави по-малко сам."),
+
+		//Sixth option buttons
+		goodbyePeioButton({ 470, 690, 470, 50 }, "Благодаря ви за отделеното време\nгосподин Яворов беше ми приятно", GRAY,
+			std::string("И аз благодаря, и на мен ми беше приятно"))
 
 	//              1st button             2nd button                3rd button             4th button
 	//options{ { 470, 510, 470, 50 }, { 470, 570, 470, 50 }, { 470, 630, 470, 50 }, { 470, 690, 470, 50 } }
@@ -109,24 +143,23 @@ QvorovMainFrame::QvorovMainFrame() :
 
 }
 
-void QvorovMainFrame::runVisuals(){
+void QvorovMainFrame::runVisuals() {
 	DrawTexture(backgroundTexture, 0, 0, WHITE);
 	DrawTexture(peioTexture, 0, 270, WHITE);
 
 	// Interview options box
 	if (showInterviewOptions) {
 		DrawRectangleRec(optionsBox, Fade(BLACK, 0.5f));
-		
+
 		// Options
 		for (optionsIndex = 0;optionsIndex < 4;optionsIndex++) {
 			if (optionsIndex <= availableOptions.size() - 1) {
 				availableOptions.at(optionsIndex).draw();
 			}
-			 
-			
+
+
 		}
 	}
-	
 
 	// Has to be active only when Peio is talking
 	if (peioTalking) {
@@ -134,13 +167,9 @@ void QvorovMainFrame::runVisuals(){
 		DrawTextEx(textFont, peioMessage.c_str(), { peioMessageBox.x + 20, peioMessageBox.y + 20 }, 20, 3, WHITE);
 	}
 
-
-
-	
-	
 	if (start) {
 		DrawRectangle(0, 0, 950, 750, Fade(BLACK, howBlack));
-		DrawTextEx(textFont, "Интервю с Пейо Яворов", { 310, 300 }, 40, 5, WHITE);
+		DrawTextEx(textFont, "Интервю с Пейо Яворов", { 310, 300 }, 40, 3, WHITE);
 
 		startTime += GetFrameTime();
 		if (startTime >= 2.5f) {
@@ -151,7 +180,28 @@ void QvorovMainFrame::runVisuals(){
 			}
 		}
 	}
+
+	// Black screen transition at the end of the interview
+	// Also show credits
+	if (firstOptionSelected && secondOptionSelected && thirdOptionSelected &&
+		fourthOptionSelected && fifthOptionSelected && sixthOptionSelected) {
+		// Wait for Peio's voice to finish talking
+		// then black screen transition
+		// and names of the people who worked on the project 
+		// NOT FINISHED YET
+		DrawRectangle(0, 0, 950, 750, Fade(BLACK, howBlack));
+		DrawTextEx(textFont, "Край на интервюто", { 310, 300 }, 40, 3, WHITE);
+		startTime += GetFrameTime();
+		if (startTime >= 2.5f) {
+			howBlack += 0.25f * GetFrameTime();
+			if (howBlack >= 1.0f) {
+				// Show credits
+				DrawTextEx(textFont, "Програмит: Иван Георгиев 11Б\nГласът на Пейо Яворов: Лубомир Попов 11Б\nГласът на Интервюиращия: Николй Френгов 11Б", { 310, 300 }, 30, 3, WHITE);
+			}
+		}
+	}
 }
+
 
 
 
@@ -196,10 +246,32 @@ void QvorovMainFrame::runMath() {
 		doYoufeelMoreUnderstoodButton.run(peioTalking, peioMessage);
 		doesThePoetHaveToBeUnderstoodButton.run(peioTalking, peioMessage);
 	}
+	else if (firstOptionSelected && secondOptionSelected && thirdOptionSelected && fourthOptionSelected && !fifthOptionSelected) {
+		availableOptions.at(0) = whyChangeGanreButton;
+		availableOptions.at(1) = whatDoYouMissMostButton;
+		availableOptions.at(2) = ifYouCouldChangeSomethingButton;
+		availableOptions.at(3) = favoritePeioPoemButton;
+
+
+		whyChangeGanreButton.run(fifthOptionSelected, peioTalking, peioMessage);
+		whatDoYouMissMostButton.run(peioTalking, peioMessage);
+		ifYouCouldChangeSomethingButton.run(peioTalking, peioMessage);
+		favoritePeioPoemButton.run(peioTalking, peioMessage);
+	}
+	else if (firstOptionSelected && secondOptionSelected && thirdOptionSelected && fourthOptionSelected && fifthOptionSelected && !sixthOptionSelected) {
+		availableOptions.at(0) = emptyButtonOne;
+		availableOptions.at(1) = emptyButtonTwo;
+		availableOptions.at(2) = emptyButtonThree;
+		availableOptions.at(3) = goodbyePeioButton;
+
+		goodbyePeioButton.run(sixthOptionSelected, peioTalking, peioMessage);
+	}
 	else {
 		availableOptions.at(0) = emptyButtonOne;
 		availableOptions.at(1) = emptyButtonTwo;
 		availableOptions.at(2) = emptyButtonThree;
 		availableOptions.at(3) = emptyButtonFour;
 	}
+
+
 }

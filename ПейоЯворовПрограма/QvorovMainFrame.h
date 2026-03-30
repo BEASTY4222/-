@@ -32,6 +32,8 @@ class QvorovMainFrame
 	bool secondOptionSelected;
 	bool thirdOptionSelected;
 	bool fourthOptionSelected;
+	bool fifthOptionSelected;
+	bool sixthOptionSelected;
 
 	// Defined button
 	Button emptyButtonOne;
@@ -59,6 +61,16 @@ class QvorovMainFrame
 	Button whatMakesPoetryAlive;
 	Button doYoufeelMoreUnderstoodButton;
 	Button doesThePoetHaveToBeUnderstoodButton;
+
+	// Fifth option buttons
+	Button whyChangeGanreButton;
+	Button whatDoYouMissMostButton;
+	Button ifYouCouldChangeSomethingButton;
+	Button favoritePeioPoemButton;
+
+	// Sixth option buttons
+	Button goodbyePeioButton;
+	
 
 	public:
 		QvorovMainFrame();

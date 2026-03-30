@@ -51,7 +51,7 @@ struct Button
 	void draw(){
 		DrawRectangleRec(box, currentbuttonColor);
 		DrawRectangleLinesEx(box, 4, BLACK);
-		DrawTextEx(textFont, buttonText.c_str(), { box.x + 45, box.y + 10 }, 20, 5, BLACK);
+		DrawTextEx(textFont, buttonText.c_str(), { box.x + 45, box.y + 5 }, 20, 3, BLACK);
 	}
 
 	void run(bool &nextStage, bool &peioTalking, std::string &message){
