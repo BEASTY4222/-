@@ -1,0 +1,3 @@
+/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/build/CMakeFiles/SCHOOLFESTIVAL.dir
+/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/build/CMakeFiles/edit_cache.dir
+/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/build/CMakeFiles/rebuild_cache.dir

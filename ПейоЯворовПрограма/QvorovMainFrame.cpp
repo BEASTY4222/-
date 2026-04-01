@@ -1,10 +1,10 @@
 #include "QvorovMainFrame.h"
 
 QvorovMainFrame::QvorovMainFrame() :
-	backgroundImage(LoadImage("resources/pics/peioKushtajpg.jpg")),
+	backgroundImage(LoadImage("../resources/pics/peioKushta.png")),
 	backgroundTexture(LoadTextureFromImage(backgroundImage)),
 
-	peioImage(LoadImage("resources/pics/peioQvorov.png")),
+	peioImage(LoadImage("../resources/pics/peioQvorov.png")),
 	peioTexture(LoadTextureFromImage(peioImage)),
 
 	firstOptionSelected(false), secondOptionSelected(false), thirdOptionSelected(false), fourthOptionSelected(false), fifthOptionSelected(false), sixthOptionSelected(false),
@@ -127,7 +127,7 @@ QvorovMainFrame::QvorovMainFrame() :
 	int extras[] = { 0x00AB, 0x00BB, 0x2013, 0x2014, 0x2026, 0x2018, 0x2019 };
 	for (int i = 0; i < sizeof(extras) / sizeof(extras[0]); i++) codepoints[count++] = extras[i];
 
-	this->textFont = LoadFontEx("resources/Fonts/2596-font.ttf", 32, codepoints, count);
+	this->textFont = LoadFontEx("../resources/fonts/2596-font.ttf", 32, codepoints, count);
 
 	availableOptions.resize(4); // We will have 4 options at the max
 

@@ -35,7 +35,7 @@ struct Button
 		int extras[] = { 0x00AB, 0x00BB, 0x2013, 0x2014, 0x2026, 0x2018, 0x2019 };
 		for (int i = 0; i < sizeof(extras) / sizeof(extras[0]); i++) codepoints[count++] = extras[i];
 
-		this->textFont = LoadFontEx("resources/Fonts/2596-font.ttf", 32, codepoints, count);
+		this->textFont = LoadFontEx("../resources/fonts/2596-font.ttf", 32, codepoints, count);
 
 	}
 
