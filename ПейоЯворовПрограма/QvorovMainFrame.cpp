@@ -14,101 +14,119 @@ QvorovMainFrame::QvorovMainFrame() :
 	peioMessageBox({ 340, 50, 600, 250 }),
 
 	// First option buttons
+	helloPeioSound(LoadSound("../resources/voiceRecordings/въпрос0.wav")),
 	helloPeioButton({ 470, 510, 470, 50 }, "Здравей,  Пейо  как  си?", GRAY,
-		std::string("Здравейте,  аз  се  чуствам  превъзходно \nтова  ми  е  първото  интервю.")),
+		std::string("Здравейте,  аз  се  чуствам  превъзходно \nтова  ми  е  първото  интервю."),helloPeioSound),
 
 	//Second option buttons
+	biographySound(LoadSound("../resources/voiceRecordings/въпрос0.5.wav")),
 	biographyButton({ 470, 510, 470, 50 }, "Кой всъщност е Пейо Яворов?", GRAY,
 		std::string("Кой съм аз? \n ") +
 		"Поет, роден от мрака и светлината, от болката и копнежа. \n " +
 		"Душа, разкъсвана между любовта, \n която изгаря, и свободата, която не чака. \n" +
 		"Живях кратко, но в пламък – \n в стиховете, в борбата, в страстта.\n" +
 		"Аз съм човекът, който търси \n невъзможното и плаща цената му. \n" +
-		"Пламък съм – понякога светя, \n понякога изгарям, но никога не угасвам."),
+		"Пламък съм – понякога светя, \n понякога изгарям, но никога не угасвам.",biographySound),
 
+	whatIsRealLoveSound(LoadSound("../resources/voiceRecordings/въпрос1.wav")),
 	whatIsRealLoveButton({ 470, 570, 470, 50 }, "Какво е истинската любов?", GRAY,
 		std::string("Любовта е огън, който едновременно топли и изгаря. \n Тя не пита дали си готов. \n ") +
-		"Спасение е само за онзи, който умее да изгори докрай. \n За мен тя бе и двете."),
+		"Спасение е само за онзи, който умее да изгори докрай. \n За мен тя бе и двете.",whatIsRealLoveSound),
 
+	needsForLovePoetrySound(LoadSound("../resources/voiceRecordings/въпрос3.wav")),
 	needsForLovePoetryButton({ 470, 630, 470, 50 }, "Нужно ли е страдание за любовна поезия?", GRAY,
 		std::string("Страданието е езикът, на който душата говори най-истински. \n ") +
-		"Без него стихът остава празна черупка. \n Поетът плаща с болка за всяка своя дума."),
+		"Без него стихът остава празна черупка. \n Поетът плаща с болка за всяка своя дума.",needsForLovePoetrySound),
 
+	whatMakesHimWriteSound(LoadSound("../resources/voiceRecordings/въпрос7.wav")),
 	whatMakesHimWriteButton({ 470, 690, 470, 50 }, "Какво чуство ви кара да пишете?", GRAY,
 		std::string("Пиша, когато душата ми не намира друг изход. \n ") +
-		"Болката често е първата искра, но любовта е пламъкът. \n Стихът идва, когато не мога да мълча."),
+		"Болката често е първата искра, но любовта е пламъкът. \n Стихът идва, когато не мога да мълча.",whatMakesHimWriteSound),
 
 	// Third option buttons
+	whatMadeHimFightSound(LoadSound("../resources/voiceRecordings/въпрос4.wav")),
 	whatMadeHimFightButton({ 470, 510, 470, 50 }, "Какво ви подтикна към борбата?", GRAY,
 		std::string("Не можех да стоя безучастен, когато народът ми стенеше.\n") +
-		"Поезията е зов, но делото е отговор. Сърцето ми поиска и двете. \n" ),
+		"Поезията е зов, но делото е отговор. Сърцето ми поиска и двете. \n",whatMadeHimFightSound),
 
-	worstPartOfRevolutionButton({ 470, 570, 470, 50 }, "Какво е истинската любов?", GRAY,
+	worstPartOfRevolutionSound(LoadSound("../resources/voiceRecordings/въпрос5.wav")),
+	worstPartOfRevolutionButton({ 470, 570, 470, 50 }, "Какво е най-тежкото от революционните години?", GRAY,
 		std::string("Тежи не толкова смъртта, колкото споменът за падналите другари.\n") +
-		"Тежи и вината, че си останал жив.\nТези сенки никога не те напускат."),
+		"Тежи и вината, че си останал жив.\nТези сенки никога не те напускат.",worstPartOfRevolutionSound),
 
-	wasItWorthItButton({ 470, 630, 470, 50 }, "Кое е най-тешкото от революционните години?", GRAY, 
+	wasItWorthItSound(LoadSound("../resources/voiceRecordings/въпрос6.wav")),
+	wasItWorthItButton({ 470, 630, 470, 50 }, "Струваше ли си личната цена?", GRAY, 
 		std::string("Цената бе висока, но свободата никога не е евтина.\n") + 
 		"Ако трябваше пак да избера, бих поел същия път.\n" + 
-		"Човек живее истински само когато служи\n на нещо по-голямо от себе си."),
+		"Човек живее истински само когато служи\n на нещо по-голямо от себе си.",wasItWorthItSound),
 
+	isFateRealSound(LoadSound("../resources/voiceRecordings/въпрос11.wav")),
 	isFateRealButton({ 470, 690, 470, 50 }, "Предопределена ли е съдбата?", GRAY,
 		std::string("Съдбата е път, който вървим сами, но и път, който ни води.  \n ") +
-		"Човек избира, но и е избран. Истината е някъде между двете."),
+		"Човек избира, но и е избран. Истината е някъде между двете.",isFateRealSound),
 
 	// Fourth option buttons
+	whatDoyouLeaveSound(LoadSound("../resources/voiceRecordings/въпрос12.wav")),
 	whatDoyouLeaveButton({ 470, 510, 470, 50 }, "Какво послание бихте оставили?", GRAY,
 		std::string("Бъдете смели в любовта и в делото. \n") +
 		"Не се страхувайте да страдате -\nстрахувайте се да живеете напразно. \n" +
-		"И пазете свободата като най-свята светиня."),
+		"И пазете свободата като най-свята светиня.",whatDoyouLeaveSound),
 
+	whatMakesPoetryAliveSound(LoadSound("../resources/voiceRecordings/въпрос8.wav")),
 	whatMakesPoetryAlive({ 470, 570, 470, 50 }, "Какво прави един стих „жив“?", GRAY,
 		std::string("Жив е стихът, който носи човешка кръв и дъх.\n") +
-		"Той трябва да боли, да трепти, да ранява.\nИ да остане в сърцето като белег."),
+		"Той трябва да боли, да трепти, да ранява.\nИ да остане в сърцето като белег.",whatMakesPoetryAliveSound),
 
-	doYoufeelMoreUnderstoodButton({ 470, 630, 470, 50 }, "Чувствате ли се неразбран или обичан?", GRAY,
+	doYoufeelMoreUnderstoodSound(LoadSound("../resources/voiceRecordings/въпрос14.wav")),
+	doYoufeelMoreUnderstoodButton({ 470, 630, 470, 50 }, "Чувствате се неразбран или обичан?", GRAY,
 		std::string("Обичан бях, но често неразбран. \n") +
 		"Ако трябваше пак да избера, бих поел същия път.\n" +
-		"Любовта към поета не винаги достига до човека.\nА човекът в мен бе крехък."),
+		"Любовта към поета не винаги достига до човека.\nА човекът в мен бе крехък.",doYoufeelMoreUnderstoodSound),
 
+	doesThePoetHaveToBeUnderstoodSound(LoadSound("../resources/voiceRecordings/въпрос9.wav")),
 	doesThePoetHaveToBeUnderstoodButton({ 470, 690, 470, 50 }, "Трябва ли поетът да бъде разбран?", GRAY,
 		std::string("Поетът е сам по природа.\n") +
 		"Ако някой го разбере — това е дар. \n" + 
-		"Но той пише не за разбиране, а защото не може иначе."),
+		"Но той пише не за разбиране, а защото не може иначе.",doesThePoetHaveToBeUnderstoodSound),
 
 	// Fifth option buttons
+	whyChangeGanreSound(LoadSound("../resources/voiceRecordings/въпрос2.wav")),
 	whyChangeGanreButton({ 470, 510, 470, 50 }, "Защо си сменихте жанра след\nИлинденското възтания?", GRAY,
 		std::string("След Илинден сърцето ми не можа вече да бъде само хроника \n") +
 		"видях човешката трагедия и тя поиска стих. \n" +
 		"Жанрът се смени, защото думите търсеха не факти,\nа сълзи и мълчание, \n" +
 		"които да превърнат болката в песен. \n" + 
 		"Писах, за да изповядам съдбата на народа не като историк,\n" +
-		"а като човек, който носи раните им в гърдите си."),
-	
+		"а като човек, който носи раните им в гърдите си.",whyChangeGanreSound),
+
+	whatDoYouMissMostSound(LoadSound("../resources/voiceRecordings/въпрос15.wav")),
 	whatDoYouMissMostButton({ 470, 570, 470, 50 }, "Какво ви липсва най-много?", GRAY,
 		std::string("Липсва ми онова, което никога не можах да имам \n") +
 		"истинската любов, която изгаря и спасява.\n" +
 		"Липсва ми и свободата, която се изплъзна от ръцете ми.\n" +
-		"Но най-много ми липсва мирът в душата, който никога не намерих."),
+		"Но най-много ми липсва мирът в душата, който никога не намерих.",whatDoYouMissMostSound),
 
+	ifYouCouldChangeSomethingSound(LoadSound("../resources/voiceRecordings/въпрос13.wav")),
 	ifYouCouldChangeSomethingButton({ 470, 630, 470, 50 }, "Ако можехте да промените нещо в живота си,\nкакво би било?", GRAY,
 		std::string("Ако можех да променя нещо, щях да изтрия онзи миг,\n") +
 		"в който не посмях да кажа всичко, което гореше в мен.\n" +
 		"Щях да дам на любовта повече смелост и на тъгата\n" +
 		"по-малко власт над дните ми.\n" + 
 		"Но може би всяка рана ме е ковала, \n" + 
-		"промяната би отнела и песента, и мълчанието ми."),
+		"промяната би отнела и песента, и мълчанието ми.",ifYouCouldChangeSomethingSound),
 
+	favoritePeioPoemSound(LoadSound("../resources/voiceRecordings/въпрос10.wav")),
 	favoritePeioPoemButton({ 470, 690, 470, 50 }, "Кое вие е любимото ваше произведение?", GRAY,
 		std::string("Любимото ми произведение е „Арменци“. \n") +
 		"В него аз търсих и намерих онова, което най-силно обичам\n" +
 		"любовта, готова да се жертва и да умре.\n" +
 		"То е родено от нощта на самотата и носи в себе си плача и надеждата на един разкъсан свят.\n" +
-		"Това стихотворение ми говори като огън в мрака и ме прави по-малко сам."),
+		"Това стихотворение ми говори като огън в мрака и ме прави по-малко сам.",favoritePeioPoemSound),
 
 		//Sixth option buttons
+		goodbyePeioSound(LoadSound("../resources/voiceRecordings/въпрос16.wav")),
 		goodbyePeioButton({ 470, 690, 470, 50 }, "Благодаря ви за отделеното време\nгосподин Яворов беше ми приятно.", GRAY,
-			std::string("И аз благодаря, и на мен ми беше приятно."))
+			std::string("И аз благодаря, и на мен ми беше приятно."), goodbyePeioSound)
 
 	//              1st button             2nd button                3rd button             4th button
 	//options{ { 470, 510, 470, 50 }, { 470, 570, 470, 50 }, { 470, 630, 470, 50 }, { 470, 690, 470, 50 } }
@@ -184,7 +202,8 @@ void QvorovMainFrame::runVisuals() {
 	// Black screen transition at the end of the interview
 	// Also show credits
 	if (firstOptionSelected && secondOptionSelected && thirdOptionSelected &&
-		fourthOptionSelected && fifthOptionSelected && sixthOptionSelected) {
+		fourthOptionSelected && fifthOptionSelected && sixthOptionSelected) 
+		{
 		// Wait for Peio's voice to finish talking
 		// then black screen transition
 		// and names of the people who worked on the project 
@@ -196,13 +215,11 @@ void QvorovMainFrame::runVisuals() {
 			howBlack += 0.25f * GetFrameTime();
 			if (howBlack >= 1.0f) {
 				// Show credits
-				DrawTextEx(textFont, "Програмит: Иван Георгиев 11Б\nГласът на Пейо Яворов: Лубомир Попов 11Б\nГласът на Интервюиращия: Николй Френгов 11Б", { 310, 300 }, 30, 3, WHITE);
+				DrawTextEx(textFont, "Програмист : Иван Георгиев 11Б\nГласът на Пейо : Любомир Попов 11Б", { 20, 670 }, 30, 3, WHITE);
 			}
 		}
 	}
 }
-
-
 
 
 void QvorovMainFrame::runMath() {

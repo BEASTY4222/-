@@ -11,8 +11,9 @@ struct Button
 	Color hoverTextColor;
 	Color normalTextColor;
 	std::string text;
+	Sound buttonSound;
 
-	Button(Rectangle box, std::string buttonText, Color buttonColor, std::string text)
+	Button(Rectangle box, std::string buttonText, Color buttonColor, std::string text, Sound buttonSound)
 	{
 		this->box = box;
 		this->buttonText = buttonText;
@@ -21,7 +22,8 @@ struct Button
 		this->text = text;
 		this->normalTextColor = WHITE;
 		this->hoverTextColor = BLACK;
-		
+		this->buttonSound = buttonSound;
+
 		int codepoints[1024];
 		int count = 0;
 
@@ -60,6 +62,7 @@ struct Button
 			currentbuttonColor = WHITE;
 
 			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
+				PlaySound(buttonSound);
 				nextStage = true;
 				message = text;
 				peioTalking = true;
@@ -79,6 +82,7 @@ struct Button
 			currentbuttonColor = WHITE;
 
 			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
+				PlaySound(buttonSound);
 				message = text;
 				peioTalking = true;
 

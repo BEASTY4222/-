@@ -41,34 +41,67 @@ class QvorovMainFrame
 	Button emptyButtonThree;
 	Button emptyButtonFour;
 
-	// First option buttons
+// First option buttons
+	Sound helloPeioSound;
 	Button helloPeioButton;
 
 	// Second option buttons
+	Sound biographySound;
 	Button biographyButton;
+
+	Sound whatIsRealLoveSound;
 	Button whatIsRealLoveButton;
+
+	Sound needsForLovePoetrySound;
 	Button needsForLovePoetryButton;
+
+	Sound whatMakesHimWriteSound;
 	Button whatMakesHimWriteButton;
+	
 
 	// Third option buttons
+	Sound whatMadeHimFightSound;
 	Button whatMadeHimFightButton;
+
+	Sound worstPartOfRevolutionSound;
 	Button worstPartOfRevolutionButton;
+
+	Sound wasItWorthItSound;
 	Button wasItWorthItButton;
+	
+
+	Sound isFateRealSound;
 	Button isFateRealButton;
 
+
 	// Fourth option buttons
+	Sound whatDoyouLeaveSound;
 	Button whatDoyouLeaveButton;
+
+	Sound whatMakesPoetryAliveSound;
 	Button whatMakesPoetryAlive;
+
+	Sound doYoufeelMoreUnderstoodSound;
 	Button doYoufeelMoreUnderstoodButton;
+
+	Sound doesThePoetHaveToBeUnderstoodSound;
 	Button doesThePoetHaveToBeUnderstoodButton;
 
 	// Fifth option buttons
+	Sound whyChangeGanreSound;
 	Button whyChangeGanreButton;
-	Button whatDoYouMissMostButton;
-	Button ifYouCouldChangeSomethingButton;
-	Button favoritePeioPoemButton;
 
+	Sound whatDoYouMissMostSound;
+	Button whatDoYouMissMostButton;
+	
+	Sound ifYouCouldChangeSomethingSound;
+	Button ifYouCouldChangeSomethingButton;
+	
+	Sound favoritePeioPoemSound;
+	Button favoritePeioPoemButton;
+	
 	// Sixth option buttons
+	Sound goodbyePeioSound;
 	Button goodbyePeioButton;
 	
 

@@ -7,7 +7,8 @@ int main()
 {
     // Initialize window
     InitWindow(950, 750, "Пейо Яворов");
-
+    InitAudioDevice();
+    
     QvorovMainFrame mainFrame;
 
     // Main game loop
