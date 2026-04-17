@@ -27,6 +27,7 @@ int main()
 
     // Cleanup
     CloseWindow();
+	CloseAudioDevice();
 
     return 0;
 }
