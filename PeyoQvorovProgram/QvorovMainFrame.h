@@ -26,6 +26,13 @@ class QvorovMainFrame
 	bool peioTalking;
 	bool showInterviewOptions;
 	std::string peioMessage;
+	bool mode;
+	Rectangle blacknessPos;
+	Vector2 peioTitlePos;
+	Vector2 creditsPos;
+	int creditsSize;
+	int textSize;
+	std::string formatedQuestions[2];
 
 	// Stages
 	bool firstOptionSelected;
@@ -34,6 +41,12 @@ class QvorovMainFrame
 	bool fourthOptionSelected;
 	bool fifthOptionSelected;
 	bool sixthOptionSelected;
+
+	// Examples Recs
+	Rectangle buttonOneRec;
+	Rectangle buttonTwoRec;
+	Rectangle buttonThreeRec;
+	Rectangle buttonFourRec;
 
 	// Defined button
 	Button emptyButtonOne;
@@ -106,7 +119,7 @@ class QvorovMainFrame
 	
 
 	public:
-		QvorovMainFrame();
+		QvorovMainFrame(bool mode);
 
 		void runVisuals();
 

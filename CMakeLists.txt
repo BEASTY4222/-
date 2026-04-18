@@ -8,14 +8,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(RAYLIB_PATH "/home/ivan/raylib")
 
 add_executable(SCHOOLFESTIVAL
-    "ПейоЯворовПрограма/PeioQvorovPrograma.cpp"
-    "ПейоЯворовПрограма/QvorovMainFrame.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/PeyoQvorovProgram/PeioQvorovPrograma.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/PeyoQvorovProgram/QvorovMainFrame.cpp"
 )
 
 # Use the same variable name here
 target_include_directories(SCHOOLFESTIVAL PRIVATE 
     "${RAYLIB_PATH}/src"
-    "${CMAKE_CURRENT_SOURCE_DIR}/ПейоЯворовПрограма/"
+    "${CMAKE_CURRENT_SOURCE_DIR}/PeyoQvorovProgram/"
 )
 
 # Point directly to the .a file in the src folder

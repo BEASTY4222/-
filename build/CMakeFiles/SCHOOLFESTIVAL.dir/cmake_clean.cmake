@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SCHOOLFESTIVAL.dir/link.d"
-  "CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o"
-  "CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o.d"
-  "CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o"
-  "CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o.d"
+  "CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o"
+  "CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o.d"
+  "CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o"
+  "CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o.d"
   "SCHOOLFESTIVAL"
   "SCHOOLFESTIVAL.pdb"
 )

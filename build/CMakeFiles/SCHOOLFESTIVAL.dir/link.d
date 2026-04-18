@@ -2,8 +2,8 @@ SCHOOLFESTIVAL: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
-  CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o \
-  CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o \
+  CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o \
+  CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o \
   /home/ivan/raylib/src/libraylib.a \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libGL.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libpthread.a \
@@ -53,9 +53,9 @@ SCHOOLFESTIVAL: \
 
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o:
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o:
 
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o:
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o:
 
 /home/ivan/raylib/src/libraylib.a:
 

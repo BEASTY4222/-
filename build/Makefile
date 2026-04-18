@@ -129,53 +129,53 @@ SCHOOLFESTIVAL/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/build
 .PHONY : SCHOOLFESTIVAL/fast
 
-ПейоЯворовПрограма/PeioQvorovPrograma.o: ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o
-.PHONY : ПейоЯворовПрограма/PeioQvorovPrograma.o
+PeyoQvorovProgram/PeioQvorovPrograma.o: PeyoQvorovProgram/PeioQvorovPrograma.cpp.o
+.PHONY : PeyoQvorovProgram/PeioQvorovPrograma.o
 
 # target to build an object file
-ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o
-.PHONY : ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o
+PeyoQvorovProgram/PeioQvorovPrograma.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o
+.PHONY : PeyoQvorovProgram/PeioQvorovPrograma.cpp.o
 
-ПейоЯворовПрограма/PeioQvorovPrograma.i: ПейоЯворовПрограма/PeioQvorovPrograma.cpp.i
-.PHONY : ПейоЯворовПрограма/PeioQvorovPrograma.i
+PeyoQvorovProgram/PeioQvorovPrograma.i: PeyoQvorovProgram/PeioQvorovPrograma.cpp.i
+.PHONY : PeyoQvorovProgram/PeioQvorovPrograma.i
 
 # target to preprocess a source file
-ПейоЯворовПрограма/PeioQvorovPrograma.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.i
-.PHONY : ПейоЯворовПрограма/PeioQvorovPrograma.cpp.i
+PeyoQvorovProgram/PeioQvorovPrograma.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.i
+.PHONY : PeyoQvorovProgram/PeioQvorovPrograma.cpp.i
 
-ПейоЯворовПрограма/PeioQvorovPrograma.s: ПейоЯворовПрограма/PeioQvorovPrograma.cpp.s
-.PHONY : ПейоЯворовПрограма/PeioQvorovPrograma.s
+PeyoQvorovProgram/PeioQvorovPrograma.s: PeyoQvorovProgram/PeioQvorovPrograma.cpp.s
+.PHONY : PeyoQvorovProgram/PeioQvorovPrograma.s
 
 # target to generate assembly for a file
-ПейоЯворовПрограма/PeioQvorovPrograma.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.s
-.PHONY : ПейоЯворовПрограма/PeioQvorovPrograma.cpp.s
+PeyoQvorovProgram/PeioQvorovPrograma.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.s
+.PHONY : PeyoQvorovProgram/PeioQvorovPrograma.cpp.s
 
-ПейоЯворовПрограма/QvorovMainFrame.o: ПейоЯворовПрограма/QvorovMainFrame.cpp.o
-.PHONY : ПейоЯворовПрограма/QvorovMainFrame.o
+PeyoQvorovProgram/QvorovMainFrame.o: PeyoQvorovProgram/QvorovMainFrame.cpp.o
+.PHONY : PeyoQvorovProgram/QvorovMainFrame.o
 
 # target to build an object file
-ПейоЯворовПрограма/QvorovMainFrame.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o
-.PHONY : ПейоЯворовПрограма/QvorovMainFrame.cpp.o
+PeyoQvorovProgram/QvorovMainFrame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o
+.PHONY : PeyoQvorovProgram/QvorovMainFrame.cpp.o
 
-ПейоЯворовПрограма/QvorovMainFrame.i: ПейоЯворовПрограма/QvorovMainFrame.cpp.i
-.PHONY : ПейоЯворовПрограма/QvorovMainFrame.i
+PeyoQvorovProgram/QvorovMainFrame.i: PeyoQvorovProgram/QvorovMainFrame.cpp.i
+.PHONY : PeyoQvorovProgram/QvorovMainFrame.i
 
 # target to preprocess a source file
-ПейоЯворовПрограма/QvorovMainFrame.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.i
-.PHONY : ПейоЯворовПрограма/QvorovMainFrame.cpp.i
+PeyoQvorovProgram/QvorovMainFrame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.i
+.PHONY : PeyoQvorovProgram/QvorovMainFrame.cpp.i
 
-ПейоЯворовПрограма/QvorovMainFrame.s: ПейоЯворовПрограма/QvorovMainFrame.cpp.s
-.PHONY : ПейоЯворовПрограма/QvorovMainFrame.s
+PeyoQvorovProgram/QvorovMainFrame.s: PeyoQvorovProgram/QvorovMainFrame.cpp.s
+.PHONY : PeyoQvorovProgram/QvorovMainFrame.s
 
 # target to generate assembly for a file
-ПейоЯворовПрограма/QvorovMainFrame.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.s
-.PHONY : ПейоЯворовПрограма/QvorovMainFrame.cpp.s
+PeyoQvorovProgram/QvorovMainFrame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SCHOOLFESTIVAL.dir/build.make CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.s
+.PHONY : PeyoQvorovProgram/QvorovMainFrame.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SCHOOLFESTIVAL"
-	@echo "... ПейоЯворовПрограма/PeioQvorovPrograma.o"
-	@echo "... ПейоЯворовПрограма/PeioQvorovPrograma.i"
-	@echo "... ПейоЯворовПрограма/PeioQvorovPrograma.s"
-	@echo "... ПейоЯворовПрограма/QvorovMainFrame.o"
-	@echo "... ПейоЯворовПрограма/QvorovMainFrame.i"
-	@echo "... ПейоЯворовПрограма/QvorovMainFrame.s"
+	@echo "... PeyoQvorovProgram/PeioQvorovPrograma.o"
+	@echo "... PeyoQvorovProgram/PeioQvorovPrograma.i"
+	@echo "... PeyoQvorovProgram/PeioQvorovPrograma.s"
+	@echo "... PeyoQvorovProgram/QvorovMainFrame.o"
+	@echo "... PeyoQvorovProgram/QvorovMainFrame.i"
+	@echo "... PeyoQvorovProgram/QvorovMainFrame.s"
 .PHONY : help
 
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ivan/raylib/src -I/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма
+CXX_INCLUDES = -I/home/ivan/raylib/src -I/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram
 
 CXX_FLAGS = -std=gnu++17
 

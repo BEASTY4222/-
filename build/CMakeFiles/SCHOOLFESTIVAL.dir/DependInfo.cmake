@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/PeioQvorovPrograma.cpp" "CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o" "gcc" "CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o.d"
-  "/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/QvorovMainFrame.cpp" "CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o" "gcc" "CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o.d"
+  "/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/PeioQvorovPrograma.cpp" "CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o" "gcc" "CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o.d"
+  "/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/QvorovMainFrame.cpp" "CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o" "gcc" "CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o.d"
   "" "SCHOOLFESTIVAL" "gcc" "CMakeFiles/SCHOOLFESTIVAL.dir/link.d"
   )
 

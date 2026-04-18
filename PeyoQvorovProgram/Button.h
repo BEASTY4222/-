@@ -12,8 +12,9 @@ struct Button
 	Color normalTextColor;
 	std::string text;
 	Sound buttonSound;
+	int textSize;
 
-	Button(Rectangle box, std::string buttonText, Color buttonColor, std::string text, Sound buttonSound)
+	Button(Rectangle box, std::string buttonText, Color buttonColor, std::string text, Sound buttonSound, int textSize)
 	{
 		this->box = box;
 		this->buttonText = buttonText;
@@ -23,6 +24,7 @@ struct Button
 		this->normalTextColor = WHITE;
 		this->hoverTextColor = BLACK;
 		this->buttonSound = buttonSound;
+		this->textSize = textSize;
 
 		int codepoints[1024];
 		int count = 0;
@@ -53,7 +55,7 @@ struct Button
 	void draw(){
 		DrawRectangleRec(box, currentbuttonColor);
 		DrawRectangleLinesEx(box, 4, BLACK);
-		DrawTextEx(textFont, buttonText.c_str(), { box.x + 45, box.y + 5 }, 20, 3, BLACK);
+		DrawTextEx(textFont, buttonText.c_str(), { box.x + 45, box.y + 5 }, textSize, 3, BLACK);
 	}
 
 	void run(bool &nextStage, bool &peioTalking, std::string &message){

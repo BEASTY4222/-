@@ -72,44 +72,44 @@ include CMakeFiles/SCHOOLFESTIVAL.dir/flags.make
 CMakeFiles/SCHOOLFESTIVAL.dir/codegen:
 .PHONY : CMakeFiles/SCHOOLFESTIVAL.dir/codegen
 
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o: CMakeFiles/SCHOOLFESTIVAL.dir/flags.make
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o: /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/PeioQvorovPrograma.cpp
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o: CMakeFiles/SCHOOLFESTIVAL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o -MF CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o.d -o CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o -c /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/PeioQvorovPrograma.cpp
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o: CMakeFiles/SCHOOLFESTIVAL.dir/flags.make
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o: /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/PeioQvorovPrograma.cpp
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o: CMakeFiles/SCHOOLFESTIVAL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o -MF CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o.d -o CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o -c /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/PeioQvorovPrograma.cpp
 
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/PeioQvorovPrograma.cpp > CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.i
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/PeioQvorovPrograma.cpp > CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.i
 
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/PeioQvorovPrograma.cpp -o CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.s
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/PeioQvorovPrograma.cpp -o CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.s
 
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o: CMakeFiles/SCHOOLFESTIVAL.dir/flags.make
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o: /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/QvorovMainFrame.cpp
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o: CMakeFiles/SCHOOLFESTIVAL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o -MF CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o.d -o CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o -c /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/QvorovMainFrame.cpp
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o: CMakeFiles/SCHOOLFESTIVAL.dir/flags.make
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o: /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/QvorovMainFrame.cpp
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o: CMakeFiles/SCHOOLFESTIVAL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o -MF CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o.d -o CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o -c /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/QvorovMainFrame.cpp
 
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/QvorovMainFrame.cpp > CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.i
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/QvorovMainFrame.cpp > CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.i
 
-CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/ПейоЯворовПрограма/QvorovMainFrame.cpp -o CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.s
+CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/UbuntoSide/UbutoVsCodeProjects/schoolFestival/PeyoQvorovProgram/QvorovMainFrame.cpp -o CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.s
 
 # Object files for target SCHOOLFESTIVAL
 SCHOOLFESTIVAL_OBJECTS = \
-"CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o" \
-"CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o"
+"CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o" \
+"CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o"
 
 # External object files for target SCHOOLFESTIVAL
 SCHOOLFESTIVAL_EXTERNAL_OBJECTS =
 
-SCHOOLFESTIVAL: CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/PeioQvorovPrograma.cpp.o
-SCHOOLFESTIVAL: CMakeFiles/SCHOOLFESTIVAL.dir/ПейоЯворовПрограма/QvorovMainFrame.cpp.o
+SCHOOLFESTIVAL: CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/PeioQvorovPrograma.cpp.o
+SCHOOLFESTIVAL: CMakeFiles/SCHOOLFESTIVAL.dir/PeyoQvorovProgram/QvorovMainFrame.cpp.o
 SCHOOLFESTIVAL: CMakeFiles/SCHOOLFESTIVAL.dir/build.make
 SCHOOLFESTIVAL: CMakeFiles/SCHOOLFESTIVAL.dir/compiler_depend.ts
 SCHOOLFESTIVAL: /home/ivan/raylib/src/libraylib.a
