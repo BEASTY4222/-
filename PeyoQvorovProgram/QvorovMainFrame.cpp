@@ -10,6 +10,8 @@ QvorovMainFrame::QvorovMainFrame(bool mode) :
 	//options{ { 470, 510, 470, 50 }, { 470, 570, 470, 50 }, { 470, 630, 470, 50 }, { 470, 690, 470, 50 } }
 
 {
+	SetMasterVolume(1.0f);  // max volume
+
 	if(mode){ // full screen mode
 		//images
 		backgroundImage = LoadImage("../resources/pics/peioKushtaFullScreen.png");
